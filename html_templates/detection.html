@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Results | SnapCatalog AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">SNAPCATALOG</a>
+        <nav>
+            <a href="inventory.html">Inventory</a>
+            <a href="upload.html">Upload</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="btn btn-primary">Get Started</a>
+        </nav>
+    </header>
+
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div class="card" style="background: #000; height: 400px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <span style="color: white;">[ AI Scanning... ]</span>
+            <div style="position: absolute; border: 2px solid var(--success); top: 20%; left: 30%; width: 100px; height: 100px;"></div>
+        </div>
+        <div class="card">
+            <h2>Detections</h2>
+            <div style="margin-top: 20px;">
+                <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                    <strong>Item: Soda Can</strong><br>Confidence: 99%
+                </div>
+                <button onclick="location.href='inventory.html'" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Confirm & Add to Stock</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div><h3>SNAPCATALOG AI</h3><p>Next-gen logistics.</p></div>
+            <div><h4>Product</h4><p>Pricing<br>API</p></div>
+            <div><h4>Support</h4><p>Contact<br>Privacy</p></div>
+        </div>
+        <div class="footer-bottom">© 2026 SnapCatalog AI.</div>
+    </footer>
+</body>
+</html>

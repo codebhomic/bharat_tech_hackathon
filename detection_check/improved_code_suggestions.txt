@@ -1,0 +1,24 @@
+for d in detections:
+    print(f"Text: {d['text']}")
+    print(f"Label: {d['label']}")
+    print("------")
+
+print("Final Inventory:", inventory)
+
+keywords = ["coca", "cola", "taste"]
+
+if any(word in text for word in keywords):
+    return "Coca Cola"
+
+    import re
+
+text = re.sub(r'[^a-zA-Z ]', '', text.lower())
+
+if "coca" in text:
+    return "Coca Cola"
+
+elif label == "bottle":
+    return "Generic Bottle Product"
+
+if d["confidence"] < 0.5:
+    product = "Low Confidence Item"

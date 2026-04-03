@@ -62,5 +62,4 @@ for d in detections:
     product = identify_product(d["label"], d["text"])
     
     inventory[product] = inventory.get(product, 0) + 1
-
-print(f"Detected text: {d["text"]}\n detected label: {d["label"]}\nInventory identified: {inventory}")
+    print(f"Detected text: {d["text"]} \n detected label: {d["label"]} \n Inventory identified: {inventory}")
